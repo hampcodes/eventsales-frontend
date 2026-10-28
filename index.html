@@ -1,11 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EventSales | Entradas para eventos en Perú</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <header class="landing-header">
+        <a class="logo" href="index.html">
+            <span class="logo__mark"></span>
+            EventSales
+        </a>
+        <a class="landing-header__menu" href="pages/participante/events.html" aria-label="Menú">
+            <img src="img/icon-menu.svg" width="20" height="20" alt="">
+        </a>
+        <nav class="landing-header__nav" aria-label="Principal">
+            <ul class="landing-header__list">
+                <li><a class="landing-header__link" href="pages/participante/events.html">Eventos</a></li>
+                <li><a class="landing-header__link" href="pages/auth/signup.html">Organizadores</a></li>
+                <li><a class="btn btn--ghost" href="pages/auth/login.html">Iniciar sesión</a></li>
+                <li><a class="btn btn--primary" href="pages/auth/signup.html">Crear cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__copy">
+                <p class="hero__eyebrow">ENTRADAS PARA EVENTOS EN PERÚ</p>
+                <h1 class="hero__title">Descubre eventos y compra tus entradas en minutos</h1>
+                <p class="hero__text">Conciertos, teatro, tecnología y más. Compra seguro y recibe tu entrada con código QR en tu correo.</p>
+                <div class="hero__search">
+                    <div class="hero__field">
+                        <img class="hero__field-icon" src="img/icon-search.svg" alt="">
+                        <label class="visually-hidden" for="hero-search">Buscar eventos, artistas o lugares</label>
+                        <input class="hero__input" id="hero-search" name="q" type="search" placeholder="Buscar eventos, artistas o lugares">
+                    </div>
+                    <a class="btn btn--primary" href="pages/participante/events.html">Buscar</a>
+                </div>
+            </div>
+            <div class="hero__image" role="img" aria-label="Imagen de portada de eventos"></div>
+        </section>
+
+        <section class="categories">
+            <h2 class="section-title">Explora por categoría</h2>
+            <ul class="categories__list">
+                <li class="categories__item">
+                    <a class="category category--active" href="pages/participante/events.html">
+                        <span class="category__name">Música</span>
+                        <span class="category__count">12 eventos</span>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a class="category" href="pages/participante/events.html">
+                        <span class="category__name">Teatro</span>
+                        <span class="category__count">8 eventos</span>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a class="category" href="pages/participante/events.html">
+                        <span class="category__name">Tecnología</span>
+                        <span class="category__count">6 eventos</span>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a class="category" href="pages/participante/events.html">
+                        <span class="category__name">Deportes</span>
+                        <span class="category__count">9 eventos</span>
+                    </a>
+                </li>
+                <li class="categories__item">
+                    <a class="category" href="pages/participante/events.html">
+                        <span class="category__name">Gastronomía</span>
+                        <span class="category__count">5 eventos</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="upcoming">
+            <div class="upcoming__header">
+                <h2 class="section-title">Próximos eventos</h2>
+                <a class="upcoming__more" href="pages/participante/events.html">Ver todos</a>
+            </div>
+            <div class="upcoming__grid">
+                <article class="event-card">
+                    <div class="event-card__image"></div>
+                    <p class="event-card__tag">Música</p>
+                    <div class="event-card__info">
+                        <p class="event-card__date">SÁB 14 DIC · 20:00</p>
+                        <h3 class="event-card__title">Vivo x el Rock</h3>
+                        <p class="event-card__venue">Explanada Monumental</p>
+                        <div class="event-card__footer">
+                            <p>
+                                <span class="event-card__price-label">Desde</span>
+                                <span class="event-card__price">S/ 45</span>
+                            </p>
+                            <a class="btn btn--secondary" href="pages/participante/event-detail.html">Ver entradas</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="event-card">
+                    <div class="event-card__image"></div>
+                    <p class="event-card__tag">Gastronomía</p>
+                    <div class="event-card__info">
+                        <p class="event-card__date">VIE 20 DIC · 19:30</p>
+                        <h3 class="event-card__title">Mistura</h3>
+                        <p class="event-card__venue">Costa Verde</p>
+                        <div class="event-card__footer">
+                            <p>
+                                <span class="event-card__price-label">Desde</span>
+                                <span class="event-card__price">S/ 60</span>
+                            </p>
+                            <a class="btn btn--secondary" href="pages/participante/event-detail.html">Ver entradas</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="event-card">
+                    <div class="event-card__image"></div>
+                    <p class="event-card__tag">Tecnología</p>
+                    <div class="event-card__info">
+                        <p class="event-card__date">SÁB 11 ENE · 21:00</p>
+                        <h3 class="event-card__title">Peru Game Show</h3>
+                        <p class="event-card__venue">Centro de Convenciones de Lima</p>
+                        <div class="event-card__footer">
+                            <p>
+                                <span class="event-card__price-label">Desde</span>
+                                <span class="event-card__price">S/ 35</span>
+                            </p>
+                            <a class="btn btn--secondary" href="pages/participante/event-detail.html">Ver entradas</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="how">
+            <div class="how__content">
+                <h2 class="section-title">Cómo funciona</h2>
+                <ol class="how__steps">
+                    <li class="how__step">
+                        <span class="how__badge">1</span>
+                        <h3 class="how__title">Elige tu evento</h3>
+                        <p class="how__text">Busca por categoría, artista o lugar y revisa fecha, precio y ubicación.</p>
+                    </li>
+                    <li class="how__step">
+                        <span class="how__badge">2</span>
+                        <h3 class="how__title">Compra tus entradas</h3>
+                        <p class="how__text">Selecciona el tipo y la cantidad, y paga de forma segura.</p>
+                    </li>
+                    <li class="how__step">
+                        <span class="how__badge">3</span>
+                        <h3 class="how__title">Recibe tu código QR</h3>
+                        <p class="how__text">Te enviamos la entrada a tu correo para mostrarla en el ingreso.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="organizers">
+            <div class="organizers__banner">
+                <div class="organizers__copy">
+                    <h2 class="organizers__title">¿Organizas eventos?</h2>
+                    <p class="organizers__text">Publica tu evento, vende entradas y sigue tus ventas desde un solo lugar.</p>
+                </div>
+                <a class="btn btn--white" href="pages/auth/signup.html">Crear cuenta de organizador</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="landing-footer">
+        <div class="landing-footer__top">
+            <div class="landing-footer__brand">
+                <a class="logo" href="index.html">
+                    <span class="logo__mark"></span>
+                    EventSales
+                </a>
+                <p class="landing-footer__about">Compra y vende entradas para los mejores eventos del Perú.</p>
+                <ul class="landing-footer__social">
+                    <li><a class="landing-footer__social-link" href="#" aria-label="Facebook"><img class="landing-footer__social-icon" src="img/icon-facebook.svg" alt=""></a></li>
+                    <li><a class="landing-footer__social-link" href="#" aria-label="Instagram"><img class="landing-footer__social-icon" src="img/icon-instagram.svg" alt=""></a></li>
+                    <li><a class="landing-footer__social-link" href="#" aria-label="TikTok"><img class="landing-footer__social-icon" src="img/icon-tiktok.svg" alt=""></a></li>
+                    <li><a class="landing-footer__social-link" href="#" aria-label="YouTube"><img class="landing-footer__social-icon" src="img/icon-youtube.svg" alt=""></a></li>
+                </ul>
+            </div>
+            <nav class="landing-footer__columns" aria-label="Pie de página">
+                <div class="landing-footer__column">
+                    <h2 class="landing-footer__heading">Eventos</h2>
+                    <a class="landing-footer__link" href="pages/participante/events.html">Música</a>
+                    <a class="landing-footer__link" href="pages/participante/events.html">Teatro</a>
+                    <a class="landing-footer__link" href="pages/participante/events.html">Tecnología</a>
+                    <a class="landing-footer__link" href="pages/participante/events.html">Deportes</a>
+                    <a class="landing-footer__link" href="pages/participante/events.html">Gastronomía</a>
+                </div>
+                <div class="landing-footer__column">
+                    <h2 class="landing-footer__heading">Organizadores</h2>
+                    <a class="landing-footer__link" href="pages/auth/signup.html">Crear cuenta de organizador</a>
+                    <a class="landing-footer__link" href="pages/organizador/event-form.html">Publicar un evento</a>
+                    <a class="landing-footer__link" href="pages/organizador/dashboard.html">Panel del organizador</a>
+                </div>
+                <div class="landing-footer__column">
+                    <h2 class="landing-footer__heading">Ayuda y legal</h2>
+                    <a class="landing-footer__link" href="#">Centro de ayuda</a>
+                    <a class="landing-footer__link" href="#">Términos y condiciones</a>
+                    <a class="landing-footer__link" href="#">Política de privacidad</a>
+                    <a class="landing-footer__link" href="#">Libro de reclamaciones</a>
+                </div>
+            </nav>
+        </div>
+        <div class="landing-footer__divider"></div>
+        <div class="landing-footer__legal-bar">
+            <p>© 2026 EventSales. Todos los derechos reservados.</p>
+            <div class="landing-footer__legal-links">
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Política de privacidad</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia sesión | EventSales</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <div class="login">
+        <header class="login__brand">
+            <a class="logo" href="../../index.html">
+                <span class="logo__mark"></span>
+                EventSales
+            </a>
+            <div class="login__copy">
+                <p class="login__headline">Tus eventos favoritos, a un clic.</p>
+                <p class="login__tagline">Compra entradas seguras y recíbelas al instante en tu correo.</p>
+            </div>
+        </header>
+
+        <main class="login__panel">
+            <form class="login__form" action="../participante/events.html">
+                <h1 class="login__title">Inicia sesión</h1>
+                <p class="login__text">Bienvenido de nuevo. Ingresa para comprar tus entradas.</p>
+                <p class="alert" role="alert">Correo o contraseña incorrectos. Inténtalo de nuevo.</p>
+                <div class="field">
+                    <label class="field__label" for="login-email">Correo electrónico</label>
+                    <input class="field__input" id="login-email" name="email" type="email" placeholder="tu@correo.com" required>
+                </div>
+                <div class="field">
+                    <label class="field__label" for="login-password">Contraseña</label>
+                    <input class="field__input" id="login-password" name="password" type="password" placeholder="••••••••" minlength="8" required>
+                </div>
+                <a class="login__forgot" href="#">¿Olvidaste tu contraseña?</a>
+                <a class="btn btn--primary btn--block" href="../participante/events.html">Iniciar sesión</a>
+                <p class="login__footer">
+                    ¿No tienes cuenta?
+                    <a class="login__link" href="signup.html">Crear cuenta</a>
+                </p>
+            </form>
+            <input type="checkbox" id="show-password" class="login__show-password">
+           
+        </main>
+    </div>
+</body>
+</html>

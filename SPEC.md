@@ -7,7 +7,7 @@ Sitio web responsivo para vender entradas a eventos.
 ## Datos
 - Figma: https://www.figma.com/design/c29WEIMhXpZ8fZ3m66ptlt/event_sales?node-id=17-1142&t=Q8EV1fPHaX5cmqom-1
 - UI: HTML y CSS puros
-- Gráficos: ninguno
+
 
 ## Cómo trabajar
 Haz solo la pantalla que te pida. Léela en el Figma, impleméntala y verifica que se vea bien al abrirla en el navegador.
